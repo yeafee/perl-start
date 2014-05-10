@@ -1,0 +1,8 @@
+#! /usr/bin/perl
+
+use 5.010;
+
+$circle_length = 2 * 12.5 * 3.141592654;
+say "Circle r=12.5,then its length is $circle_length !"
+
+

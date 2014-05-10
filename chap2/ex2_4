@@ -1,0 +1,10 @@
+#! /usr/bin/perl
+
+use 5.010;
+
+say "Enter one	number	:";
+chomp($n1=<STDIN>);
+say "Enter another number :";
+chomp($n2=<STDIN>);
+$result = $n1 * $n2;
+say "The multiply result is :  $result !";

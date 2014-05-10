@@ -1,0 +1,20 @@
+#! /usr/bin/perl
+
+use 5.010;
+
+
+
+sub total {
+ my $sum = 0;
+ foreach my $n (@_){
+     $sum += $n;
+ }
+ $sum;
+} 
+
+print "Enter  numbers start and end on separate lines,then you'll get total sum in the range:\n";
+chomp(my @ns=<STDIN>);
+$start = shift @ns;
+$end = shift @ns;
+@ary = ($start .. $end);
+print "The total sum between $start and $end is:",total(@ary),"\n";

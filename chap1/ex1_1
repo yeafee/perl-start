@@ -1,0 +1,6 @@
+#!/usr/bin/perl
+use 5.010;
+
+print "print: Hello,World!\n";
+say    " say: Hello!";
+say    " say: 你好!";

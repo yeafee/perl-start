@@ -1,0 +1,10 @@
+#! /usr/bin/perl
+
+use 5.010;
+
+@names = qw(fred betty barney dino wilma pebbles bamm-bamm);
+print "Enter some number:\n";
+chomp(@ns = <STDIN>);
+foreach $n (@ns) {
+   print "$names[$n-1]\t";
+}

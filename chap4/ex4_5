@@ -1,0 +1,20 @@
+#! /usr/bin/perl
+
+use 5.010;
+
+
+sub greet{
+  state @guests;
+  my $p = shift @_ ;
+  if(@guests == undef){
+     print "Hi $p! You are the first one here!\n";
+   }else{
+     print "Hi $p! I've seen:@guests","\n";
+   }
+   push @guests,$p;
+}
+
+greet("Fred");
+greet("Barney");
+greet("Wilma");
+greet("Betty");

@@ -1,0 +1,9 @@
+#! /usr/bin/perl
+
+use 5.010;
+
+print "Enter some string:\n";
+@ns = <STDIN>;
+chomp(@n2s = @ns);
+print "sorted string in different lines:\n",sort @ns;
+print "sorted string in one line:",sort @n2s;

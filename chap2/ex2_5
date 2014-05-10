@@ -1,0 +1,10 @@
+#! /usr/bin/perl
+
+use 5.010;
+
+say "Enter some name:";
+$name=<STDIN>;
+say "Enter display times:";
+chomp($times=<STDIN>);
+$str = $name x $times;
+say $str ;

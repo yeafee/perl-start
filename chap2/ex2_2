@@ -1,0 +1,9 @@
+#! /usr/bin/perl
+
+use 5.010;
+
+chomp($radius = <STDIN>);
+$circle_length = 2 * $radius * 3.141592654;
+say "radius:$radius,and circle length is :$circle_length !"
+
+
